@@ -2,6 +2,8 @@ import { Spotlight } from './ui/Spotlight'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl';
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import { MagicButton } from './ui/MagicButton';
+
 const Hero = () => {
   const t = useTranslations('Hero');
 
@@ -29,7 +31,18 @@ const Hero = () => {
       <div className='flex justify-center relative my-20 z-10'>
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
           <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-96'>{t('tagline')}</h2>
-          <TextGenerateEffect words={t('title')} />
+          <TextGenerateEffect className="text-center text-[50px] md:text-5xl lg:text-6xl" words={t('title')} purpleWordIndices={[5, 6]} />
+
+          <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+            {t('description')}
+          </p>
+
+          <a href="#about">
+            <MagicButton
+              title={t('MainButton')}
+              position="center"
+            />
+          </a>
         </div>
 
       </div>

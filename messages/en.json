@@ -1,6 +1,8 @@
 {
     "Hero": {
-        "tagline": "Useful, elegant and efficient digital products",
-        "title": "We design, develop and scale digital solutions with purpose."
+        "tagline": "Real products. Real users. Real impact.",
+        "title": "We create modern and impactful digital solutions.",
+        "description": "SaaS • Web & mobile apps • AI tools • Software • Custom websites",
+        "MainButton": "Learn more"
     }
 }

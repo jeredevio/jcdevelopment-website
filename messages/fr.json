@@ -1,6 +1,8 @@
 {
     "Hero": {
-        "tagline": "Des produits digitaux utiles, élégants et performants.",
-        "title": "Nous concevons, développons et faisons évoluer des solutions numériques pensées pour durer."
+        "tagline": "Des produits réels. Des utilisateurs réels. Un impact réel.",
+        "title": "Nous créons des solutions numériques modernes et impactantes.",
+        "description": "SaaS • Applications web & mobiles • Outils IA • Logiciels • Sites web personnalisés",
+        "MainButton": "En savoir plus"
     }
 }
