@@ -1,8 +1,8 @@
-import { SpotlightNew } from './ui/spotlight-new'
+import { SpotlightNew } from '@/components/ui/spotlight-new'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl';
-import { TextGenerateEffect } from './ui/text-generate-effect';
-import { MagicButton } from './ui/MagicButton';
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
+import { MagicButton } from '@/components/ui/MagicButton';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => {

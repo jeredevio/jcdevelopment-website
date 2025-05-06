@@ -4,5 +4,13 @@
         "title": "We create modern and impactful digital solutions.",
         "description": "SaaS • Web & mobile apps • AI tools • Software • Custom websites",
         "MainButton": "Learn more"
+    },
+   
+    "Navbar": {
+        "home": "Home",
+        "about": "About",
+        "products": "Products",
+        "blog": "Blog",
+        "contact": "Contact"
     }
 }

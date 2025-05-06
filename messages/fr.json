@@ -4,5 +4,13 @@
         "title": "Nous créons des solutions numériques modernes et impactantes.",
         "description": "SaaS • Applications web & mobiles • Outils IA • Logiciels • Sites web personnalisés",
         "MainButton": "En savoir plus"
+    },
+    
+    "Navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "products": "Produits",
+        "blog": "Blog",
+        "contact": "Contact"
     }
 }
