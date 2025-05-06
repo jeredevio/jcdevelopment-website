@@ -69,7 +69,9 @@ export default function Navbar() {
 
 
                 {/* Mobile menu button */}
-                <Hamburger toggled={isOpen} toggle={() => setIsOpen((v) => !v)} />
+                <div className="md:hidden">
+                    <Hamburger toggled={isOpen} toggle={() => setIsOpen((v) => !v)} />
+                </div>
             </div>
 
             {/* Mobile menu */}
