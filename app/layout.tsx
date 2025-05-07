@@ -1,11 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-// Configure la police Inter
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter", // Optionnel, pour utiliser comme variable CSS
-  display: "swap",          // Recommandé pour de meilleures performances
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

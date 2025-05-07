@@ -18,7 +18,7 @@ const Expertise = () => {
     const items = getExpertiseItems(t);
 
     return (
-        <section id="about" className="py-24 w-full px-6 bg-black z-0">
+        <section id="about" className="py-24 w-full px-6 bg-black z-50">
             <h2 className="text-center text-3xl md:text-4xl font-bold text-white mb-12">
                 {t("sectionTitle")}
             </h2>
