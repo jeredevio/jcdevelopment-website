@@ -5,7 +5,6 @@
         "description": "SaaS • Applications web & mobiles • Outils IA • Logiciels • Sites web personnalisés",
         "MainButton": "En savoir plus"
     },
-    
     "Navbar": {
         "home": "Accueil",
         "about": "À propos",
@@ -13,19 +12,23 @@
         "blog": "Blog",
         "contact": "Contact"
     },
-
-    "AboutGrid": {
-  "item1_title": "Je privilégie la collaboration client, favorisant la communication ouverte",
-  "item1_desc": "",
-  "item2_title": "Je suis très flexible avec les fuseaux horaires",
-  "item2_desc": "",
-  "item3_title": "Mon stack technique",
-  "item3_desc": "J'essaie constamment de m'améliorer",
-  "item4_title": "Passionné de tech et de développement.",
-  "item4_desc": "",
-  "item5_title": "Je construis actuellement une librairie d'animation JS",
-  "item5_desc": "Les coulisses",
-  "item6_title": "Envie de démarrer un projet ensemble ?",
-  "item6_desc": ""
-}
+    "expertise": {
+        "sectionTitle": "Nos expertises",
+        "idea": {
+            "title": "Vision produit & Idéation",
+            "description": "Transformer une idée en produit utile. On identifie les besoins réels, on conçoit une solution claire, puis on la ship."
+        },
+        "design": {
+            "title": "UI / UX & Design système",
+            "description": "Des interfaces sobres, efficaces, orientées usage. Chaque pixel est pensé pour guider l’utilisateur sans friction."
+        },
+        "dev": {
+            "title": "Développement Front & Back",
+            "description": "Du code clair, scalable et maintenable. On utilise les meilleurs outils actuels pour shipper vite et bien."
+        },
+        "ai": {
+            "title": "Intelligence Artificielle",
+            "description": "On utilise l’IA pour enrichir l’expérience, automatiser et accélérer — sans gimmick. Juste là où elle est utile."
+        }
+    }
 }

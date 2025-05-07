@@ -12,18 +12,23 @@
         "blog": "Blog",
         "contact": "Contact"
     },
-    "AboutGrid": {
-        "item1_title": "I prioritize client collaboration, fostering open communication",
-        "item1_desc": "",
-        "item2_title": "I'm very flexible with time zone communications",
-        "item2_desc": "",
-        "item3_title": "My tech stack",
-        "item3_desc": "I'm always trying to improve",
-        "item4_title": "Passionate about tech and development.",
-        "item4_desc": "",
-        "item5_title": "I'm currently building a JS animation library",
-        "item5_desc": "The backstage",
-        "item6_title": "Want to start a project together?",
-        "item6_desc": ""
+    "expertise": {
+        "sectionTitle": "Our Core Expertise",
+        "idea": {
+            "title": "Product Thinking & Ideation",
+            "description": "We turn raw ideas into useful products. From problem validation to solution design, we build what matters."
+        },
+        "design": {
+            "title": "UI / UX & Design Systems",
+            "description": "We design clean, usable interfaces. Every pixel is placed with purpose to create frictionless experiences."
+        },
+        "dev": {
+            "title": "Frontend & Backend Development",
+            "description": "Clean, scalable code using today's best tools. We build fullstack — solo — with speed and clarity."
+        },
+        "ai": {
+            "title": "Artificial Intelligence",
+            "description": "We use AI where it makes sense — to enhance UX, automate flows, and move faster. No gimmicks."
+        }
     }
 }
