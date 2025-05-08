@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { mainLinks, ctaLink } from "@/lib/navLinks";
 import { Turn as Hamburger } from 'hamburger-react';
-
+import LanguageSwitcher from "./LanguageSwitcher";
 // Composant Logo séparé pour une meilleure performance
 const Logo = () => (
     <Link
@@ -50,7 +50,7 @@ export default function Navbar() {
             aria-label="Navigation principale"
             className="
                 fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-3xl z-50
-                bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl rounded-2xl shadow-lg
+                bg-white/70 dark:bg-neutral-900/70 backdrop-blur-xl rounded-2xl shadow-lg
                 border border-white/40 dark:border-white/10
                 ring-1 ring-white/40 dark:ring-white/10
             "
@@ -64,7 +64,7 @@ export default function Navbar() {
                         link.children ? (
                             <div className="relative group" key={`nav-${link.key}`}>
                                 <button
-                                    className="flex items-center gap-1 px-2 py-1 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-cyan-500 dark:hover:text-purple-400 transition-colors"
+                                    className="flex items-center gap-1 px-2 py-1 text-base font-medium text-gray-700 dark:text-gray-200 dark:hover:text-purple-300 transition-colors"
                                     aria-expanded={false}
                                     aria-haspopup="true"
                                 >
@@ -88,7 +88,7 @@ export default function Navbar() {
                                             target={sublink.external ? "_blank" : "_self"}
                                             rel={sublink.external ? "noopener noreferrer" : undefined}
                                             aria-label={sublink.external ? `${t(sublink.key)} (s'ouvre dans un nouvel onglet)` : t(sublink.key)}
-                                            className="px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-neutral-800 hover:text-cyan-500 dark:hover:text-purple-400 whitespace-nowrap flex items-center gap-2"
+                                            className="px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-neutral-800 dark:hover:text-purple-300 whitespace-nowrap flex items-center gap-2"
                                         >
                                             {t(sublink.key)}
                                             {sublink.external && (
@@ -116,7 +116,7 @@ export default function Navbar() {
                                 key={`nav-${link.key}`}
                                 href={link.href}
                                 className={cn(
-                                    "relative px-2 py-1 text-base font-medium transition-colors hover:text-cyan-500 dark:hover:text-purple-400",
+                                    "relative px-2 py-1 text-base font-medium transition-colors hover:text-cyan-500 dark:hover:text-purple-300",
                                     pathname === link.href
                                         ? "text-cyan-600 dark:text-purple-300"
                                         : "text-gray-700 dark:text-gray-200"
@@ -135,17 +135,20 @@ export default function Navbar() {
                     )}
                 </div>
 
-                <div className="hidden md:block">
+                <div className="hidden md:flex items-center gap-4">
+                    <LanguageSwitcher />
                     <Link
                         href={ctaLink.href}
                         className="px-4 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-700 text-black text-sm font-bold transition-colors dark:bg-gray-200 dark:hover:bg-white"
                     >
                         {t(ctaLink.key)}
                     </Link>
+
                 </div>
 
                 {/* Mobile menu button */}
-                <div className="md:hidden">
+                <div className="md:hidden flex items-center gap-2">
+                    <LanguageSwitcher />
                     <Hamburger
                         toggled={isOpen}
                         toggle={handleMenuToggle}
@@ -197,6 +200,7 @@ export default function Navbar() {
                                         </Link>
                                     ))
                                     : (
+
                                         <Link
                                             key={`mobile-${link.key}`}
                                             href={link.href}
