@@ -11,7 +11,9 @@
         "about": "About",
         "products": "Products",
         "blog": "Blog",
-        "contact": "Contact"
+        "contact": "Contact",
+        "resources": "Resources",
+        "shop": "Shop"
     },
     "expertise": {
         "sectionTitle": "Our Core Expertise",
